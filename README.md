@@ -1,6 +1,6 @@
 # SGPA Calculator
 
-A modern, elegant web application for calculating Semester Grade Point Average (SGPA) with an intuitive interface and beautiful design.
+A modern, elegant web application for calculating Semester Grade Point Average (SGPA) with an intuitive interface and design.
 
 ---
 
