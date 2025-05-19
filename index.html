@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <header>
+            <h1>SGPA Calculator</h1>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <div class="card">
+            <div class="form-container">
+                <div class="table-header">
+                    <span class="subject-header">Subject</span>
+                    <span class="credit-header">Credits</span>
+                    <span class="grade-header">Grade</span>
+                    <span class="action-header"></span>
+                </div>
+                <div id="subjects-container">
+                    <!-- Subject rows will be added dynamically -->
+                </div>
+                <button id="add-subject" class="btn-add">
+                    <i class="fas fa-plus"></i> Add Subject
+                </button>
+                <button id="calculate-sgpa" class="btn-calculate">
+                    <i class="fas fa-calculator"></i> Calculate SGPA
+                </button>
+            </div>
+        </div>
+
+        <div id="result-card" class="card result-card hidden">
+            <h2>Results</h2>
+            <div class="result-details">
+                <div class="result-item">
+                    <span class="result-label">Total Credits:</span>
+                    <span id="total-credits" class="result-value">0</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Total Points:</span>
+                    <span id="total-points" class="result-value">0</span>
+                </div>
+                <div class="result-item sgpa-result">
+                    <span class="result-label">SGPA:</span>
+                    <span id="sgpa-value" class="result-value highlight">0.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="notification" class="notification">
+            <span id="notification-message"></span>
+        </div>
+
+        <footer>
+  <p>
+    <a href="https://github.com/Radonzilla" target="_blank" 
+       style="color: #007acc; font-weight: 600; text-decoration: underline; cursor: pointer;">
+      Radonzilla
+    </a>, made with <i class="fas fa-heart" style="color: red;"></i> for you
+  </p>
+</footer>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
